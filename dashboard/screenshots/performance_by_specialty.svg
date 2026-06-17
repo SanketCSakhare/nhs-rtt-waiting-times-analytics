@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="540" viewBox="0 0 980 540">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32" y="42" font-family="Arial" font-size="24" font-weight="700" fill="#172033">18-Week Performance by Specialty</text>
+<text x="32" y="97" font-family="Arial" font-size="14" fill="#172033">Trauma and Orthopaedics</text>
+<rect x="275" y="72" width="541" height="38" rx="4" fill="#005eb8"/>
+<text x="828" y="97" font-family="Arial" font-size="14" fill="#172033">68.1%</text>
+<text x="32" y="151" font-family="Arial" font-size="14" fill="#172033">Ophthalmology</text>
+<rect x="275" y="126" width="561" height="38" rx="4" fill="#005eb8"/>
+<text x="848" y="151" font-family="Arial" font-size="14" fill="#172033">70.6%</text>
+<text x="32" y="205" font-family="Arial" font-size="14" fill="#172033">Urology</text>
+<rect x="275" y="180" width="577" height="38" rx="4" fill="#005eb8"/>
+<text x="864" y="205" font-family="Arial" font-size="14" fill="#172033">72.6%</text>
+<text x="32" y="259" font-family="Arial" font-size="14" fill="#172033">General Surgery</text>
+<rect x="275" y="234" width="585" height="38" rx="4" fill="#005eb8"/>
+<text x="872" y="259" font-family="Arial" font-size="14" fill="#172033">73.7%</text>
+<text x="32" y="313" font-family="Arial" font-size="14" fill="#172033">ENT</text>
+<rect x="275" y="288" width="588" height="38" rx="4" fill="#005eb8"/>
+<text x="875" y="313" font-family="Arial" font-size="14" fill="#172033">73.9%</text>
+<text x="32" y="367" font-family="Arial" font-size="14" fill="#172033">Gynaecology</text>
+<rect x="275" y="342" width="588" height="38" rx="4" fill="#005eb8"/>
+<text x="875" y="367" font-family="Arial" font-size="14" fill="#172033">74.0%</text>
+<text x="32" y="421" font-family="Arial" font-size="14" fill="#172033">Gastroenterology</text>
+<rect x="275" y="396" width="609" height="38" rx="4" fill="#005eb8"/>
+<text x="896" y="421" font-family="Arial" font-size="14" fill="#172033">76.6%</text>
+<text x="32" y="475" font-family="Arial" font-size="14" fill="#172033">Dermatology</text>
+<rect x="275" y="450" width="615" height="38" rx="4" fill="#005eb8"/>
+<text x="902" y="475" font-family="Arial" font-size="14" fill="#172033">77.3%</text>
+</svg>
