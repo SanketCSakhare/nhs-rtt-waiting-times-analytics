@@ -8,14 +8,6 @@ Intended public source: [NHS England Consultant-led Referral to Treatment Waitin
 
 NHS operational teams need clear visibility of waiting list pressure, 18-week target performance, long-waiting patients, and specialty-level bottlenecks. This project converts RTT-style data into dashboard-ready KPIs and recommendations for capacity planning and performance recovery.
 
-## Why This Is a 10/10 Healthcare Data Analyst Project
-
-- Uses a high-value NHS operational performance topic.
-- Shows healthcare domain knowledge: RTT, 18-week target, backlog, long waiters, specialty variation.
-- Includes Python analysis, SQL queries, dashboard-ready outputs, and business recommendations.
-- Produces recruiter-friendly charts directly in the README.
-- Includes synthetic demo data so the repo runs immediately before official NHS files are added.
-
 ## Executive Summary
 
 This project answers six healthcare analytics questions:
