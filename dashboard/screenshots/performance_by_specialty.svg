@@ -1,28 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="540" viewBox="0 0 980 540">
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1334" viewBox="0 0 980 1334">
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="32" y="42" font-family="Arial" font-size="24" font-weight="700" fill="#172033">18-Week Performance by Specialty</text>
-<text x="32" y="97" font-family="Arial" font-size="14" fill="#172033">Trauma and Orthopaedics</text>
-<rect x="275" y="72" width="541" height="38" rx="4" fill="#005eb8"/>
-<text x="828" y="97" font-family="Arial" font-size="14" fill="#172033">68.1%</text>
-<text x="32" y="151" font-family="Arial" font-size="14" fill="#172033">Ophthalmology</text>
-<rect x="275" y="126" width="561" height="38" rx="4" fill="#005eb8"/>
-<text x="848" y="151" font-family="Arial" font-size="14" fill="#172033">70.6%</text>
-<text x="32" y="205" font-family="Arial" font-size="14" fill="#172033">Urology</text>
-<rect x="275" y="180" width="577" height="38" rx="4" fill="#005eb8"/>
-<text x="864" y="205" font-family="Arial" font-size="14" fill="#172033">72.6%</text>
-<text x="32" y="259" font-family="Arial" font-size="14" fill="#172033">General Surgery</text>
-<rect x="275" y="234" width="585" height="38" rx="4" fill="#005eb8"/>
-<text x="872" y="259" font-family="Arial" font-size="14" fill="#172033">73.7%</text>
-<text x="32" y="313" font-family="Arial" font-size="14" fill="#172033">ENT</text>
-<rect x="275" y="288" width="588" height="38" rx="4" fill="#005eb8"/>
-<text x="875" y="313" font-family="Arial" font-size="14" fill="#172033">73.9%</text>
-<text x="32" y="367" font-family="Arial" font-size="14" fill="#172033">Gynaecology</text>
-<rect x="275" y="342" width="588" height="38" rx="4" fill="#005eb8"/>
-<text x="875" y="367" font-family="Arial" font-size="14" fill="#172033">74.0%</text>
-<text x="32" y="421" font-family="Arial" font-size="14" fill="#172033">Gastroenterology</text>
-<rect x="275" y="396" width="609" height="38" rx="4" fill="#005eb8"/>
-<text x="896" y="421" font-family="Arial" font-size="14" fill="#172033">76.6%</text>
-<text x="32" y="475" font-family="Arial" font-size="14" fill="#172033">Dermatology</text>
-<rect x="275" y="450" width="615" height="38" rx="4" fill="#005eb8"/>
-<text x="902" y="475" font-family="Arial" font-size="14" fill="#172033">77.3%</text>
+<text x="32" y="97" font-family="Arial" font-size="14" fill="#172033">Oral Surgery Service</text>
+<rect x="275" y="72" width="385" height="38" rx="4" fill="#005eb8"/>
+<text x="672" y="97" font-family="Arial" font-size="14" fill="#172033">54.5%</text>
+<text x="32" y="151" font-family="Arial" font-size="14" fill="#172033">Ear Nose and Throat Service</text>
+<rect x="275" y="126" width="403" height="38" rx="4" fill="#005eb8"/>
+<text x="690" y="151" font-family="Arial" font-size="14" fill="#172033">57.1%</text>
+<text x="32" y="205" font-family="Arial" font-size="14" fill="#172033">Gynaecology Service</text>
+<rect x="275" y="180" width="425" height="38" rx="4" fill="#005eb8"/>
+<text x="712" y="205" font-family="Arial" font-size="14" fill="#172033">60.1%</text>
+<text x="32" y="259" font-family="Arial" font-size="14" fill="#172033">Plastic Surgery Service</text>
+<rect x="275" y="234" width="426" height="38" rx="4" fill="#005eb8"/>
+<text x="713" y="259" font-family="Arial" font-size="14" fill="#172033">60.3%</text>
+<text x="32" y="313" font-family="Arial" font-size="14" fill="#172033">Trauma and Orthopaedic Service</text>
+<rect x="275" y="288" width="433" height="38" rx="4" fill="#005eb8"/>
+<text x="720" y="313" font-family="Arial" font-size="14" fill="#172033">61.4%</text>
+<text x="32" y="367" font-family="Arial" font-size="14" fill="#172033">Neurosurgical Service</text>
+<rect x="275" y="342" width="441" height="38" rx="4" fill="#005eb8"/>
+<text x="728" y="367" font-family="Arial" font-size="14" fill="#172033">62.5%</text>
+<text x="32" y="421" font-family="Arial" font-size="14" fill="#172033">Neurology Service</text>
+<rect x="275" y="396" width="450" height="38" rx="4" fill="#005eb8"/>
+<text x="737" y="421" font-family="Arial" font-size="14" fill="#172033">63.8%</text>
+<text x="32" y="475" font-family="Arial" font-size="14" fill="#172033">General Surgery Service</text>
+<rect x="275" y="450" width="451" height="38" rx="4" fill="#005eb8"/>
+<text x="738" y="475" font-family="Arial" font-size="14" fill="#172033">63.9%</text>
+<text x="32" y="529" font-family="Arial" font-size="14" fill="#172033">Other - Paediatric Services</text>
+<rect x="275" y="504" width="465" height="38" rx="4" fill="#005eb8"/>
+<text x="752" y="529" font-family="Arial" font-size="14" fill="#172033">65.8%</text>
+<text x="32" y="583" font-family="Arial" font-size="14" fill="#172033">Urology Service</text>
+<rect x="275" y="558" width="466" height="38" rx="4" fill="#005eb8"/>
+<text x="753" y="583" font-family="Arial" font-size="14" fill="#172033">66.0%</text>
+<text x="32" y="637" font-family="Arial" font-size="14" fill="#172033">Other - Surgical Services</text>
+<rect x="275" y="612" width="475" height="38" rx="4" fill="#005eb8"/>
+<text x="762" y="637" font-family="Arial" font-size="14" fill="#172033">67.2%</text>
+<text x="32" y="691" font-family="Arial" font-size="14" fill="#172033">Dermatology Service</text>
+<rect x="275" y="666" width="485" height="38" rx="4" fill="#005eb8"/>
+<text x="772" y="691" font-family="Arial" font-size="14" fill="#172033">68.8%</text>
+<text x="32" y="745" font-family="Arial" font-size="14" fill="#172033">Cardiology Service</text>
+<rect x="275" y="720" width="486" height="38" rx="4" fill="#005eb8"/>
+<text x="773" y="745" font-family="Arial" font-size="14" fill="#172033">68.9%</text>
+<text x="32" y="799" font-family="Arial" font-size="14" fill="#172033">Rheumatology Service</text>
+<rect x="275" y="774" width="500" height="38" rx="4" fill="#005eb8"/>
+<text x="787" y="799" font-family="Arial" font-size="14" fill="#172033">70.8%</text>
+<text x="32" y="853" font-family="Arial" font-size="14" fill="#172033">Gastroenterology Service</text>
+<rect x="275" y="828" width="501" height="38" rx="4" fill="#005eb8"/>
+<text x="788" y="853" font-family="Arial" font-size="14" fill="#172033">71.0%</text>
+<text x="32" y="907" font-family="Arial" font-size="14" fill="#172033">Other - Medical Services</text>
+<rect x="275" y="882" width="502" height="38" rx="4" fill="#005eb8"/>
+<text x="789" y="907" font-family="Arial" font-size="14" fill="#172033">71.1%</text>
+<text x="32" y="961" font-family="Arial" font-size="14" fill="#172033">Ophthalmology Service</text>
+<rect x="275" y="936" width="514" height="38" rx="4" fill="#005eb8"/>
+<text x="801" y="961" font-family="Arial" font-size="14" fill="#172033">72.8%</text>
+<text x="32" y="1015" font-family="Arial" font-size="14" fill="#172033">Respiratory Medicine Service</text>
+<rect x="275" y="990" width="523" height="38" rx="4" fill="#005eb8"/>
+<text x="810" y="1015" font-family="Arial" font-size="14" fill="#172033">74.1%</text>
+<text x="32" y="1069" font-family="Arial" font-size="14" fill="#172033">Cardiothoracic Surgery Service</text>
+<rect x="275" y="1044" width="524" height="38" rx="4" fill="#005eb8"/>
+<text x="811" y="1069" font-family="Arial" font-size="14" fill="#172033">74.2%</text>
+<text x="32" y="1123" font-family="Arial" font-size="14" fill="#172033">General Internal Medicine Service</text>
+<rect x="275" y="1098" width="547" height="38" rx="4" fill="#005eb8"/>
+<text x="834" y="1123" font-family="Arial" font-size="14" fill="#172033">77.5%</text>
+<text x="32" y="1177" font-family="Arial" font-size="14" fill="#172033">Other - Other Services</text>
+<rect x="275" y="1152" width="568" height="38" rx="4" fill="#005eb8"/>
+<text x="855" y="1177" font-family="Arial" font-size="14" fill="#172033">80.4%</text>
+<text x="32" y="1231" font-family="Arial" font-size="14" fill="#172033">Other - Mental Health Services</text>
+<rect x="275" y="1206" width="592" height="38" rx="4" fill="#005eb8"/>
+<text x="879" y="1231" font-family="Arial" font-size="14" fill="#172033">83.8%</text>
+<text x="32" y="1285" font-family="Arial" font-size="14" fill="#172033">Elderly Medicine Service</text>
+<rect x="275" y="1260" width="615" height="38" rx="4" fill="#005eb8"/>
+<text x="902" y="1285" font-family="Arial" font-size="14" fill="#172033">87.0%</text>
 </svg>

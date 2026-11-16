@@ -1,3 +1,5 @@
+# SYNTHETIC OFFLINE FALLBACK ONLY. Random made-up trusts and numbers, used when the real NHS extract
+# (src/download_nhs_rtt_data.py) cannot be downloaded. No published figure in this repo comes from it.
 from pathlib import Path
 
 import numpy as np

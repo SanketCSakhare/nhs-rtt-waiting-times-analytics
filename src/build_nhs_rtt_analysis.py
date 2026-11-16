@@ -3,7 +3,8 @@ from pathlib import Path
 import pandas as pd
 
 
-RAW_PATH = Path("data/raw/nhs_rtt_demo.csv")
+REAL_PATH = Path("data/raw/nhs_rtt_england.csv")  # from src/download_nhs_rtt_data.py
+DEMO_PATH = Path("data/raw/nhs_rtt_demo.csv")  # synthetic offline fallback from src/generate_demo_data.py
 PROCESSED = Path("data/processed")
 CHARTS = Path("dashboard/screenshots")
 
@@ -26,12 +27,12 @@ def recovery_priority(row):
 
 def svg_bar_chart(df, label_col, value_col, title, output_path, value_format="{:.1%}"):
     width = 980
-    height = 540
     margin_left = 275
     margin_right = 90
     margin_top = 72
     bar_gap = 16
     bar_height = 38
+    height = margin_top + len(df) * (bar_height + bar_gap) + 20
     plot_width = width - margin_left - margin_right
     max_value = max(df[value_col].max(), 0.01)
     rows = [
@@ -57,7 +58,10 @@ def main():
     PROCESSED.mkdir(parents=True, exist_ok=True)
     CHARTS.mkdir(parents=True, exist_ok=True)
 
-    df = pd.read_csv(RAW_PATH)
+    raw_path = REAL_PATH if REAL_PATH.exists() else DEMO_PATH
+    if raw_path == DEMO_PATH:
+        print("WARNING: real NHS data not found, using SYNTHETIC demo data. Outputs are not real figures.")
+    df = pd.read_csv(raw_path)
     df["performance_18_weeks"] = df["within_18_weeks"] / df["total_waiting_list"]
     df["long_waiter_share"] = df["waiting_52_plus_weeks"] / df["total_waiting_list"]
     df["pressure_band"] = df.apply(pressure_band, axis=1)
@@ -72,7 +76,7 @@ def main():
             total_waiting_list=("total_waiting_list", "sum"),
             within_18_weeks=("within_18_weeks", "sum"),
             waiting_52_plus_weeks=("waiting_52_plus_weeks", "sum"),
-            median_wait_weeks=("median_wait_weeks", "mean"),
+            avg_median_wait_weeks=("median_wait_weeks", "mean"),
         )
     )
     specialty_summary["performance_18_weeks"] = specialty_summary["within_18_weeks"] / specialty_summary["total_waiting_list"]
@@ -85,7 +89,7 @@ def main():
             total_waiting_list=("total_waiting_list", "sum"),
             within_18_weeks=("within_18_weeks", "sum"),
             waiting_52_plus_weeks=("waiting_52_plus_weeks", "sum"),
-            median_wait_weeks=("median_wait_weeks", "mean"),
+            avg_median_wait_weeks=("median_wait_weeks", "mean"),
         )
     )
     trust_summary["performance_18_weeks"] = trust_summary["within_18_weeks"] / trust_summary["total_waiting_list"]
@@ -100,7 +104,7 @@ def main():
             total_waiting_list=("total_waiting_list", "sum"),
             within_18_weeks=("within_18_weeks", "sum"),
             waiting_52_plus_weeks=("waiting_52_plus_weeks", "sum"),
-            median_wait_weeks=("median_wait_weeks", "mean"),
+            avg_median_wait_weeks=("median_wait_weeks", "mean"),
         )
     )
     region_summary["performance_18_weeks"] = region_summary["within_18_weeks"] / region_summary["total_waiting_list"]
@@ -113,11 +117,14 @@ def main():
             total_waiting_list=("total_waiting_list", "sum"),
             within_18_weeks=("within_18_weeks", "sum"),
             waiting_52_plus_weeks=("waiting_52_plus_weeks", "sum"),
-            median_wait_weeks=("median_wait_weeks", "mean"),
+            avg_median_wait_weeks=("median_wait_weeks", "mean"),
         )
     )
     monthly_summary["performance_18_weeks"] = monthly_summary["within_18_weeks"] / monthly_summary["total_waiting_list"]
     monthly_summary["long_waiter_share"] = monthly_summary["waiting_52_plus_weeks"] / monthly_summary["total_waiting_list"]
+
+    # small independent providers swing wildly on a few pathways, so also count the large ones
+    large = trust_summary[trust_summary["total_waiting_list"] >= 10000]
 
     executive = pd.DataFrame(
         [
@@ -127,7 +134,10 @@ def main():
                 "performance_18_weeks": round(latest["within_18_weeks"].sum() / latest["total_waiting_list"].sum(), 4),
                 "waiting_52_plus_weeks": int(latest["waiting_52_plus_weeks"].sum()),
                 "long_waiter_share": round(latest["waiting_52_plus_weeks"].sum() / latest["total_waiting_list"].sum(), 4),
+                "providers_reporting": len(trust_summary),
                 "trusts_below_60_percent": int((trust_summary["performance_18_weeks"] < 0.60).sum()),
+                "providers_10k_plus": len(large),
+                "providers_10k_plus_below_60_percent": int((large["performance_18_weeks"] < 0.60).sum()),
                 "highest_pressure_specialty": specialty_summary.iloc[0]["specialty"],
             }
         ]
@@ -154,6 +164,13 @@ def main():
         "long_waiter_share",
         "Long Waiter Share by Region",
         CHARTS / "long_waiter_share_by_region.svg",
+    )
+    svg_bar_chart(
+        monthly_summary,
+        "month",
+        "performance_18_weeks",
+        "18-Week Performance by Month",
+        CHARTS / "performance_by_month.svg",
     )
     print("Created NHS RTT KPI outputs and dashboard preview charts.")
 

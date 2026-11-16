@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="740" viewBox="0 0 980 740">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32" y="42" font-family="Arial" font-size="24" font-weight="700" fill="#172033">18-Week Performance by Month</text>
+<text x="32" y="97" font-family="Arial" font-size="14" fill="#172033">2025-10</text>
+<rect x="275" y="72" width="575" height="38" rx="4" fill="#005eb8"/>
+<text x="862" y="97" font-family="Arial" font-size="14" fill="#172033">61.7%</text>
+<text x="32" y="151" font-family="Arial" font-size="14" fill="#172033">2025-11</text>
+<rect x="275" y="126" width="575" height="38" rx="4" fill="#005eb8"/>
+<text x="862" y="151" font-family="Arial" font-size="14" fill="#172033">61.6%</text>
+<text x="32" y="205" font-family="Arial" font-size="14" fill="#172033">2025-12</text>
+<rect x="275" y="180" width="573" height="38" rx="4" fill="#005eb8"/>
+<text x="860" y="205" font-family="Arial" font-size="14" fill="#172033">61.5%</text>
+<text x="32" y="259" font-family="Arial" font-size="14" fill="#172033">2026-01</text>
+<rect x="275" y="234" width="573" height="38" rx="4" fill="#005eb8"/>
+<text x="860" y="259" font-family="Arial" font-size="14" fill="#172033">61.4%</text>
+<text x="32" y="313" font-family="Arial" font-size="14" fill="#172033">2026-02</text>
+<rect x="275" y="288" width="583" height="38" rx="4" fill="#005eb8"/>
+<text x="870" y="313" font-family="Arial" font-size="14" fill="#172033">62.5%</text>
+<text x="32" y="367" font-family="Arial" font-size="14" fill="#172033">2026-03</text>
+<rect x="275" y="342" width="609" height="38" rx="4" fill="#005eb8"/>
+<text x="896" y="367" font-family="Arial" font-size="14" fill="#172033">65.3%</text>
+<text x="32" y="421" font-family="Arial" font-size="14" fill="#172033">2026-04</text>
+<rect x="275" y="396" width="606" height="38" rx="4" fill="#005eb8"/>
+<text x="893" y="421" font-family="Arial" font-size="14" fill="#172033">64.9%</text>
+<text x="32" y="475" font-family="Arial" font-size="14" fill="#172033">2026-05</text>
+<rect x="275" y="450" width="611" height="38" rx="4" fill="#005eb8"/>
+<text x="898" y="475" font-family="Arial" font-size="14" fill="#172033">65.6%</text>
+<text x="32" y="529" font-family="Arial" font-size="14" fill="#172033">2026-06</text>
+<rect x="275" y="504" width="614" height="38" rx="4" fill="#005eb8"/>
+<text x="901" y="529" font-family="Arial" font-size="14" fill="#172033">65.8%</text>
+<text x="32" y="583" font-family="Arial" font-size="14" fill="#172033">2026-07</text>
+<rect x="275" y="558" width="609" height="38" rx="4" fill="#005eb8"/>
+<text x="896" y="583" font-family="Arial" font-size="14" fill="#172033">65.3%</text>
+<text x="32" y="637" font-family="Arial" font-size="14" fill="#172033">2026-08</text>
+<rect x="275" y="612" width="608" height="38" rx="4" fill="#005eb8"/>
+<text x="895" y="637" font-family="Arial" font-size="14" fill="#172033">65.2%</text>
+<text x="32" y="691" font-family="Arial" font-size="14" fill="#172033">2026-09</text>
+<rect x="275" y="666" width="615" height="38" rx="4" fill="#005eb8"/>
+<text x="902" y="691" font-family="Arial" font-size="14" fill="#172033">65.9%</text>
+</svg>

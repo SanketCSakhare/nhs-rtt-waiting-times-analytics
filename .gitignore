@@ -1,5 +1,8 @@
 __pycache__/
+.pytest_cache/
 .ipynb_checkpoints/
 .venv/
 *.pbix
-
+# raw NHS downloads and the reshaped extract are rebuilt by src/download_nhs_rtt_data.py
+data/raw/*
+!data/raw/.gitkeep
